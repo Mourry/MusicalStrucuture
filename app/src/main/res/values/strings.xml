@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Musical Strucuture</string>
+    <string name="playlists">Playlists</string>
+    <string name="library">Library</string>
+    <string name="search">Search</string>
+    <string name="songs">Songs</string>
+    <string name="genre">Genre</string>
+    <string name="artist">Artist</string>
+    <string name="album">Album</string>
+    <string name="playingSong">Name of the song - Name of the artist</string>
+    <string name="homeExplanation">This activity is the home screen you lend when you open the app,
+        you have a navigation bar to access to all activities. You can click on each
+        icon to access to a new activity. At the bottom, a little player in a card view showing the current song which is playing.There are
+        3  icon buttons at this player, play, next song, previous song. There will be other cards views to show on top of the player,
+        the recommended songs for the user, his favorite playlist/album/artist.etc.</string>
+    <string name="playlistExplanation">This activity shows all playlists the user makes. You can access to all activities from the navigation bar,
+        there is also the little player at the bottom.
+        There will be a navigation menu to browse other kind of playlists, the user could click on the playlit\'s name and it will start in the player.</string>
+    <string name="libraryExplanation"> This activity shows the songs library, you could filter or sort the songs by genres, artists and by albums.
+    There will have checkboxes next the name of the song/artist/album/genre to be selected to create a new playlist or add into an existing playlist.
+    the user will just have to click on the song/artist/album/genre or the checkboxed selection to start playing the song/artist/album/genre.</string>
+    <string name="searchExplanation"> This activity shows a search field where the user can search a song/artist/album/genre.
+        Like is in library activity, the user can select the found song/artist/album/genre with a checkbox next to it, and create a playlist, or add to an existing playlist.
+    The user could also directly click on the found song/artist/album/genre and it will start on the player.</string>
+</resources>

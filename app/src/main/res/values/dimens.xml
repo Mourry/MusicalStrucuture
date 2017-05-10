@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navigation Bar Icons -->
+    <dimen name="margin_NavBarIcons">21dp</dimen>
+    <dimen name="height_NavBarIcons">48dp</dimen>
+
+    <!-- Library Navigation Bar Text -->
+    <dimen name="textSize_LibBarText">16sp</dimen>
+
+    <dimen name="margin">5dp</dimen>
+</resources>

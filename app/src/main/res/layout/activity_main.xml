@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutParent"
+    tools:context="com.example.android.musicalstrucuture.MainActivity">
+
+    <View style="@style/whiteBar" />
+
+    <LinearLayout
+        android:id="@+id/NavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home"
+            style="@style/navBarIcons"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <ImageView
+            android:id="@+id/playlists"
+            style="@style/navBarIcons"
+            android:src="@drawable/ic_format_list_bulleted_white_24dp" />
+
+        <ImageView
+            android:id="@+id/library"
+            style="@style/navBarIcons"
+            android:src="@drawable/ic_library_music_white_24dp" />
+
+        <ImageView
+            android:id="@+id/search"
+            style="@style/navBarIcons"
+            android:src="@drawable/ic_search_white_24dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomWhiteBar"
+        style="@style/whiteBar"
+        android:layout_below="@id/NavBar" />
+
+    <TextView
+        android:id="@+id/explanationText"
+        style="@style/ExplanationTextView"
+        android:text="@string/homeExplanation" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        style="@style/PlayNowCard"
+        card_view:cardBackgroundColor="@color/colorPrimaryDark"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            style="@style/LinearLayoutPlayer"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ScrollSong"
+                style="@style/PlayingSong" />
+
+            <SeekBar
+                android:id="@+id/curent"
+                style="@style/SeekBar" />
+
+            <LinearLayout
+                style="@style/LinearLayoutPlayer"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/PlayerImageView"
+                    android:src="@drawable/ic_skip_previous_white_24dp" />
+
+                <ImageView
+                    style="@style/PlayerImageView"
+                    android:src="@drawable/ic_pause_circle_outline_white_24dp" />
+
+                <ImageView
+                    style="@style/PlayerImageView"
+                    android:src="@drawable/ic_skip_next_white_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

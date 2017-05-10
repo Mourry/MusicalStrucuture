@@ -1,0 +1,148 @@
+<resources>
+
+<!-- Base application theme. -->
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+<!-- Style of the parents LinearLayouts. -->
+<style name="LayoutParent">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@drawable/background</item>
+</style>
+
+
+<!-- Style of the navigation bar. -->
+<style name="navBarLayout">
+    <item name="android:gravity">center</item>
+</style>
+
+<style name="navBarIcons">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_margin">@dimen/margin_NavBarIcons</item>
+    <item name="android:gravity">center</item>
+    <item name="android:scaleType">fitCenter</item>
+</style>
+
+<!-- Style of the white separation bar -->
+<style name="whiteBar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/colorText</item>
+</style>
+
+
+<!-- Style of the library navigation bar. -->
+<style name="LibraryNavBar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:layout_margin">@dimen/margin_NavBarIcons</item>
+    <item name="android:layout_below">@id/bottomWhiteBar</item>
+</style>
+
+<style name="LibraryNavText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:textSize">@dimen/textSize_LibBarText</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/colorText</item>
+</style>
+
+<!-- Style of the playing now card -->
+<style name="PlayNowCard">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_alignParentBottom">true</item>
+    <item name="android:layout_margin">@dimen/margin_NavBarIcons</item>
+    <item name="android:background">@color/colorPrimaryDark</item>
+</style>
+
+<style name="PlayingSong">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin_NavBarIcons</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:ellipsize">marquee</item>
+    <item name="android:focusable">true</item>
+    <item name="android:focusableInTouchMode">true</item>
+    <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    <item name="android:scrollHorizontally">true</item>
+    <item name="android:text">@string/playingSong</item>
+    <item name="android:textSize">@dimen/textSize_LibBarText</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/colorText</item>
+</style>
+
+<style name="SeekBar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+    <item name="android:max">100</item>
+    <item name="android:progress">60</item>
+</style>
+
+<style name="PlayerImageView">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+</style>
+
+<style name="LinearLayoutPlayer">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+</style>
+
+<!-- Style of the explanation text -->
+
+<style name="ExplanationTextView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+    <item name="android:layout_below">@id/bottomWhiteBar</item>
+    <item name="android:textColor">@color/colorText</item>
+</style>
+
+<style name="ExplanationTextView2">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+    <item name="android:layout_below">@id/bottomWhiteBar2</item>
+    <item name="android:textColor">@color/colorText</item>
+</style>
+
+<style name="ExplanationTextView3">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+    <item name="android:layout_below">@id/searchfield</item>
+    <item name="android:textColor">@color/colorText</item>
+</style>
+
+<!-- Style of the SearchView -->
+
+<style name="SearchView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+    <item name="android:padding">@dimen/margin</item>
+    <item name="android:layout_below">@id/bottomWhiteBar</item>
+    <item name="android:colorBackground">@color/colorText</item>
+    <item name="android:iconifiedByDefault">false</item>
+    <item name="android:queryHint">@string/search</item>
+    <item name="android:inputType">text</item>
+    <item name="android:background">@color/colorText</item>
+
+
+</style>
+
+
+</resources>
