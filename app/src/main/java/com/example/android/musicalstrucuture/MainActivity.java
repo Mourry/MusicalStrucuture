@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent playlistIntent = new Intent(MainActivity.this, PlaylistsActivity.class);
                 startActivity(playlistIntent);
+                finish();
             }
         });
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent libraryIntent = new Intent(MainActivity.this, LibraryActivity.class);
                 startActivity(libraryIntent);
+                finish();
             }
         });
 
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent searchIntent = new Intent(MainActivity.this, SearchActivity.class);
                 startActivity(searchIntent);
+                finish();
             }
         });
     }
