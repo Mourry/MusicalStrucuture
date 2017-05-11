@@ -40,6 +40,7 @@ public class LibraryActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent playlistIntent = new Intent(LibraryActivity.this, PlaylistsActivity.class);
                 startActivity(playlistIntent);
+                finish();
             }
         });
 
@@ -49,6 +50,7 @@ public class LibraryActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent searchIntent = new Intent(LibraryActivity.this, SearchActivity.class);
                 startActivity(searchIntent);
+                finish();
             }
         });
     }
