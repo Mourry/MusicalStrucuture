@@ -30,6 +30,7 @@ public class SearchActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent playlistIntent = new Intent(SearchActivity.this, PlaylistsActivity.class);
                 startActivity(playlistIntent);
+                finish();
             }
         });
 
@@ -39,6 +40,7 @@ public class SearchActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent libraryIntent = new Intent(SearchActivity.this, LibraryActivity.class);
                 startActivity(libraryIntent);
+                finish();
             }
         });
     }
